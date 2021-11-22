@@ -35,9 +35,9 @@
 
 👤 **Salim Abdulai**
 
-- GitHub: [@githubhandle](https://github.com/RayhanTabase)
-- Twitter: [@twitterhandle](https://twitter.com/@RayhanTabase)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/salim-abdulai-5430065b)
+- GitHub: [@RayhanTabase](https://github.com/RayhanTabase)
+- Twitter: [@RayhanTabase](https://twitter.com/@RayhanTabase)
+- LinkedIn: [Salim-Abdulai](https://linkedin.com/in/salim-abdulai-5430065b)
 - Email: salimabdulai2@yahoo.com
 
 ## 🤝 Contributing
