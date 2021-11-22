@@ -35,10 +35,10 @@
 
 👤 **Salim Abdulai**
 
-- Github: [@tongoonamujera](https://github.com/RayhanTabase)
-- Twitter: [@tongomujera]()
-- Linkedin: [tongoona-mujera]()
-- Email:  salimabdulai2@yahoo.com
+- GitHub: [@githubhandle](https://github.com/RayhanTabase)
+- Twitter: [@twitterhandle](https://twitter.com/@RayhanTabase)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/salim-abdulai-5430065b)
+- Email: salimabdulai2@yahoo.com
 
 ## 🤝 Contributing
 
