@@ -32,6 +32,14 @@
 - Linkedin: [tongoona-mujera](https://www.linkedin.com/in/tongoona-mujera-125604162/)
 - Email:  tongoonamujera@gmail.com
 
+
+👤 **Salim Abdulai**
+
+- Github: [@tongoonamujera](https://github.com/RayhanTabase)
+- Twitter: [@tongomujera]()
+- Linkedin: [tongoona-mujera]()
+- Email:  salimabdulai2@yahoo.com
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
