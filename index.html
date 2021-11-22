@@ -8,39 +8,30 @@
   <title>Awesome Books</title>
 </head>
 <body>
-  <!-- header -->
-  <header class='header'>
-    <nav class="nav-bar">
-      <ul class="nav-list">
-        <li class="icon">Awesome Books</li>
-      </ul>
-      <ul class="nav-list-end">
-        <li class="list-item">List</li>
-        <li class="list-item">Add New</li>
-        <li class="list-item">Contact</li>
-      </ul>
-    </nav>
-  </header>
 
 <!-- main  -->
   <main class="main">
+    <h1>Awesome Books</h1>
+
+    <div class="booksList">
+
+    </div>
+
     <div class="form">
-      <form>
-        <input type="text" class="title">
-        <input type="text" class="author">
+      <form id="newBookForm">
+        <div>
+          <input type="text" name="title" placeholder="Title">
+        </div><br>
+        <div>
+          <input type="text" name="author" placeholder="Author">
+        </div><br>
         <input type="submit" value="Add" class='submit'>
       </form>
     </div>
-
-    <div class='books'>
-      <div class="container"></div>
-    </div>
-
-    <div class="contact"></div>
   </main>
 
   <!-- footer -->
   <footer class="footer"></footer>
-  <script src="./index.js"></script>
+  <script src="js/index.js" type="module"></script>
 </body>
 </html>
