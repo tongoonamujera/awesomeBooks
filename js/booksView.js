@@ -18,8 +18,8 @@ const deleteBook = (e) => {
 function createBookItem(book, index) {
   const newBook = document.createElement('div');
   newBook.innerHTML += `
-  <h3>${book.title}</h3>
-  <h3>${book.author}</h3>
+  <p><strong>${book.title}</strong></p>
+  <p><strong>${book.author}</strong></p>
   <button class="deleteBook" type="button" data-id=${index} data-title=${book.title} data-author=${book.author}> Remove </button>
   <hr>
   `;
