@@ -29,6 +29,8 @@ To get a local copy up and running, follow these simple example steps.
 
 ### USAGE
 
+- user can create and remove books through usage of local storage
+
 ### Prerequisites
 
 - Code editor
