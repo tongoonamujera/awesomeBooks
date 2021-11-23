@@ -7,44 +7,6 @@ class Book {
   }
 }
 
-export class LocalStorage {
-  // Get books from storage
-  static getBooks() {
-    let books = JSON.parse(localStorage.getItem('books'));
-    if (!books) {
-      books = [];
-    }
-    return books;
-  }
-
-  // Add new book
-  static addBook(title, author) {
-    const books = LocalStorage.getBooks();
-    if (title && author) {
-      const book = new Book(title, author);
-      books.push(book);
-      const data = JSON.stringify(books);
-      localStorage.setItem('books', data);
-
-      // createBookItem
-      Html.createBookItem(book, books.length - 1);
-      Html.clearInputs();
-    }
-  }
-
-  // Delete book
-  static deleteBook(e) {
-    const books = LocalStorage.getBooks();
-    const index = e.target.dataset.id;
-    books.splice(index, 1);
-    Html.alignButtons(index);
-    const data = JSON.stringify(books);
-    localStorage.setItem('books', data);
-    Html.removeBookItem(e);
-    Html.alignButtons(index);
-  }
-}
-
 export class Html {
   // Append new book item to list
   static createBookItem(book, index) {
@@ -90,5 +52,43 @@ export class Html {
         button.dataset.id -= 1;
       }
     });
+  }
+}
+
+export class LocalStorage {
+  // Get books from storage
+  static getBooks() {
+    let books = JSON.parse(localStorage.getItem('books'));
+    if (!books) {
+      books = [];
+    }
+    return books;
+  }
+
+  // Add new book
+  static addBook(title, author) {
+    const books = LocalStorage.getBooks();
+    if (title && author) {
+      const book = new Book(title, author);
+      books.push(book);
+      const data = JSON.stringify(books);
+      localStorage.setItem('books', data);
+
+      // createBookItem
+      Html.createBookItem(book, books.length - 1);
+      Html.clearInputs();
+    }
+  }
+
+  // Delete book
+  static deleteBook(e) {
+    const books = LocalStorage.getBooks();
+    const index = e.target.dataset.id;
+    books.splice(index, 1);
+    Html.alignButtons(index);
+    const data = JSON.stringify(books);
+    localStorage.setItem('books', data);
+    Html.removeBookItem(e);
+    Html.alignButtons(index);
   }
 }
