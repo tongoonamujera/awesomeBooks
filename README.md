@@ -1,6 +1,6 @@
 # AWESOME BOOKS
 
-> In this project, I will build an application that allows users to create their own transaction lists. In this application, users can also create groups with which they can add their transactions. See live demo........
+> "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
 ## Explanation video
 
@@ -31,7 +31,6 @@
 - Twitter: [@tongomujera](https://twitter.com/tongomujera)
 - Linkedin: [tongoona-mujera](https://www.linkedin.com/in/tongoona-mujera-125604162/)
 - Email:  tongoonamujera@gmail.com
-
 
 👤 **Salim Abdulai**
 
