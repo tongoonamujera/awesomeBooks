@@ -51,7 +51,7 @@ class Book {
       localStorage.setItem('books', data);
       this.createBookItem(book, books.length - 1);
     }
-  };
+  }
 }
 
 const allBooks = new Book();
