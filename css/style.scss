@@ -93,6 +93,8 @@ body {
     border-radius: 50%;
   }
 
+/* ##### Book list style found here ##### */
+
   .books {
     display: none;
     width: 80%;
@@ -156,5 +158,11 @@ body {
       padding: 0.2rem 0.5rem 0.2rem 0.5rem;
       box-shadow: 3px 3px black;
     }
+  }
+
+  /* ##### contact styles goes here ##### */
+
+  .contact {
+    display: none;
   }
 }

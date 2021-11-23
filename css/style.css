@@ -87,7 +87,9 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding: 0;
+  /* ##### Book list style found here ##### */
   /* ##### form styles ##### */
+  /* ##### contact styles goes here ##### */
 }
 
 .main input[type="radio"] {
@@ -186,5 +188,9 @@ body {
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
   -webkit-box-shadow: 3px 3px black;
           box-shadow: 3px 3px black;
+}
+
+.main .contact {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
