@@ -7,6 +7,8 @@ class Book {
   }
 }
 
+/* eslint no-use-before-define: [2, {classes: false}] */
+
 export class Html {
   // Append new book item to list
   static createBookItem(book, index) {
