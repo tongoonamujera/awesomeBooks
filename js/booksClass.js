@@ -75,7 +75,8 @@ export class Html {
 
   // Clear inputs
   static clearInputs() {
-    
+    const inputs = document.querySelectorAll("input");
+    inputs.forEach(input => input.value = "");
   }
 
   // Shift button id by -1
@@ -87,6 +88,3 @@ export class Html {
     });
   }
 }
-
-
-
