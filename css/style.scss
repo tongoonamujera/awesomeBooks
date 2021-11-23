@@ -11,18 +11,80 @@ body {
   margin: 0;
 
   .navbar {
-    max-width: 90%;
+    max-width: 99%;
     height: inherit;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 0.4rem 0;
+
+    .nav-start {
+      grid-column: 1 / span 1;
+      margin: 0 auto auto 0;
+
+      h4 {
+        padding: 0;
+        margin: 0 auto auto 1rem;
+      }
+    }
+
+    .nav-end {
+      grid-column: 2 / span 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-content: center;
+
+      label {
+        border-right: 3px solid black;
+        text-align: center;
+      }
+
+      .books {
+        grid-column: 1 / span 1;
+        height: 100%;
+      }
+
+      .forms {
+        grid-column: 2 / span 1;
+        margin: 0 auto;
+
+      }
+
+      .contact {
+        grid-column: 3 / span 1;
+        margin-left: 30% !important;
+      }
+    }
   }
 }
 
 /* ##### main Styles #### */
 .main {
+  margin-top: 1.1rem ;
   max-width: 100vw;
   height: fit-content;
   padding: 0;
 
+  input[type="radio"] {
+    display: none;
+  }
+
+  #books:checked ~ .books {
+    display: block;
+  }
+
+  #forms:checked ~ .form {
+    display: block;
+  }
+
+  #contact:checked ~ .contact {
+    display: block;
+  }
+
   hr {
+    display: none;
     width: 20%;
     height: 5px;
     background-color: gray;
@@ -30,7 +92,8 @@ body {
   }
 
   .books {
-    width: 60%;
+    display: none;
+    width: 80%;
     margin: 0 auto 0 auto;
     height: fit-content;
 
@@ -70,7 +133,8 @@ body {
 
 /* ##### form styles ##### */
   .form {
-    width: 25%;
+    display: none;
+    width: 50%;
     margin: 1rem auto 0 auto;
     position: relative;
 
@@ -85,8 +149,8 @@ body {
     }
 
     .submit {
-      margin-left: 72%;
-      width: 30%;
+      margin-left: 85%;
+      width: 15%;
       padding: 0.2rem 0.5rem 0.2rem 0.5rem;
       box-shadow: 3px 3px black;
     }
