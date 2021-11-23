@@ -1,5 +1,5 @@
 class Book {
-  constructor(title,author) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
   }
@@ -16,10 +16,10 @@ export class LocalStorage {
   }
 
   // Add new book
-  static addBook(title,author) {
-    let books = LocalStorage.getBooks();
+  static addBook(title, author) {
+    const books = LocalStorage.getBooks();
     if (title && author) {
-      const book = new Book(title,author)
+      const book = new Book(title, author);
       books.push(book);
       const data = JSON.stringify(books);
       localStorage.setItem('books', data);
@@ -32,14 +32,14 @@ export class LocalStorage {
 
   // Delete book
   static deleteBook(e) {
-    let books = LocalStorage.getBooks();
+    const books = LocalStorage.getBooks();
     const index = e.target.dataset.id;
     books.splice(index, 1);
-    Html.alignButtons(index)
+    Html.alignButtons(index);
     const data = JSON.stringify(books);
     localStorage.setItem('books', data);
-    Html.removeBookItem(e)
-    Html.alignButtons(index)
+    Html.removeBookItem(e);
+    Html.alignButtons(index);
   }
 }
 
@@ -54,15 +54,15 @@ export class Html {
     <button class="deleteBook" type="button" data-id=${index} data-title=${book.title} data-author=${book.author}> Remove </button>
     <hr>
     `;
-    newBook.querySelector('button').addEventListener('click', (e)=>LocalStorage.deleteBook(e));
+    newBook.querySelector('button').addEventListener('click', (e) => LocalStorage.deleteBook(e));
     booksList.appendChild(newBook);
   }
 
   static displayBooks() {
-    let books = LocalStorage.getBooks();
+    const books = LocalStorage.getBooks();
     if (books) {
       books.forEach((book, index) => {
-        Html.createBookItem(book,index);
+        Html.createBookItem(book, index);
       });
     }
   }
@@ -70,13 +70,13 @@ export class Html {
   // Remove book item from list
   static removeBookItem(e) {
     const parent = e.target.parentElement;
-    parent.remove()
+    parent.remove();
   }
 
   // Clear inputs
   static clearInputs() {
-    const inputs = document.querySelectorAll("input");
-    inputs.forEach(input => input.value = "");
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach((input) => (input.value = ''));
   }
 
   // Shift button id by -1
