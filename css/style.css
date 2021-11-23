@@ -54,6 +54,10 @@ body {
   text-align: center;
 }
 
+.header .navbar .nav-end label:hover {
+  color: #0404af;
+}
+
 .header .navbar .nav-end .books {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
