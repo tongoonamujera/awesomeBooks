@@ -8,9 +8,24 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-start">
+      <h4>Awesome Books</h4>
+    </div>
+    <div class="nav-end">
+      <label for="books">List</label>
+      <label for="forms">Add New</label>
+      <label for="contact">Contact</label>
+    </div>
+  </nav>
+</header>
 
 <!-- main  -->
   <main class="main">
+    <input type="radio" name="navigation" id="books" checked />
+    <input type="radio" name="navigation" id="forms">
+    <input type="radio" name="navigation" id="contact">
     <div class="books">
       <h1>All awesome books</h1>
       <div class="booksList">
