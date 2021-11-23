@@ -2,9 +2,9 @@
 
 > "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
-## Explanation video
-
 ## Live Demo Link
+
+no live demo for now
 
 ## Built With
 
@@ -61,3 +61,7 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project.!
+
+## 📝 License
+
+This project is [MIT](LICENCE) licensed.
