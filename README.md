@@ -1,10 +1,10 @@
 # AWESOME BOOKS
 
-> In this project, I will build an application that allows users to create their own transaction lists. In this application, users can also create groups with which they can add their transactions. See live demo........
-
-## Explanation video
+> "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.
 
 ## Live Demo Link
+
+no live demo for now
 
 ## Built With
 
@@ -14,7 +14,22 @@
 
 ## Getting Started
 
+Clone
+
+```git
+git clone https://github.com/tongoonamujera/awesomeBooks.git
+```
+
+To get a local copy up and running, follow these simple example steps.
+
+1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/grouped-transactions.git`
+2. Make your new cloned directory your active directory
+3. Currently, you are in the "development branch."
+4. Change your current branch to Feature branch `git checkout feature` to navigate to a branch of your choice
+
 ### USAGE
+
+- user can create and remove books through usage of local storage
 
 ### Prerequisites
 
@@ -32,7 +47,6 @@
 - Linkedin: [tongoona-mujera](https://www.linkedin.com/in/tongoona-mujera-125604162/)
 - Email:  tongoonamujera@gmail.com
 
-
 👤 **Salim Abdulai**
 
 - GitHub: [@RayhanTabase](https://github.com/RayhanTabase)
@@ -49,3 +63,7 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project.!
+
+## 📝 License
+
+This project is [MIT](LICENCE) licensed.
