@@ -39,6 +39,7 @@ body {
       label {
         border-right: 3px solid black;
         text-align: center;
+
         &:hover {
           color: rgb(4, 4, 175);
         }
@@ -68,7 +69,7 @@ body {
 
 /* ##### main Styles #### */
 .main {
-  margin-top: 1.1rem ;
+  margin-top: 1.1rem;
   max-width: 100vw;
   height: 100%;
   padding: 0;
@@ -105,7 +106,7 @@ body {
     border-radius: 50%;
   }
 
-/* ##### Book list style found here ##### */
+  /* ##### Book list style found here ##### */
 
   .books {
     display: none;
@@ -147,7 +148,7 @@ body {
     }
   }
 
-/* ##### form styles ##### */
+  /* ##### form styles ##### */
   .form {
     display: none;
     width: 50%;
@@ -179,7 +180,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 }
 
@@ -195,7 +195,7 @@ footer {
     height: 1.8rem;
     padding: 0;
     margin: 0;
-  
+
     .navbar {
       max-width: 99%;
       height: inherit;
@@ -204,42 +204,43 @@ footer {
       border: 2px solid black;
       margin: 0 auto;
       padding: 0.4rem 0;
-  
+
       .nav-start {
         grid-column: 1 / span 1;
         margin: auto auto auto 0;
-  
+
         h4 {
           padding: 0;
           margin: auto auto auto 1rem;
         }
       }
-  
+
       .nav-end {
         grid-column: 2 / span 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
         align-content: center;
-  
+
         label {
           border-right: 3px solid black;
           text-align: center;
+
           &:hover {
             color: rgb(4, 4, 175);
           }
         }
-  
+
         .books {
           grid-column: 1 / span 1;
           height: 100%;
         }
-  
+
         .forms {
           grid-column: 2 / span 1;
           margin: 0 auto;
         }
-  
+
         .contact {
           grid-column: 3 / span 1;
           margin-left: 30% !important;
@@ -247,30 +248,30 @@ footer {
       }
     }
   }
-  
+
   /* ##### main Styles #### */
   .main {
-    margin-top: 1.1rem ;
+    margin-top: 1.1rem;
     max-width: 100vw;
     height: 100%;
     padding: 0;
-  
+
     input[type="radio"] {
       display: none;
     }
-  
+
     #books:checked ~ .books {
       display: block;
     }
-  
+
     #forms:checked ~ .form {
       display: block;
     }
-  
+
     #contact:checked ~ .contact {
       display: block;
     }
-  
+
     hr {
       display: none;
       width: 20%;
@@ -278,29 +279,29 @@ footer {
       background-color: gray;
       border-radius: 50%;
     }
-  
-  /* ##### Book list style found here ##### */
-  
+
+    /* ##### Book list style found here ##### */
+
     .books {
       display: none;
       width: 90%;
       margin: 0 auto 0 auto;
       height: 100%;
-  
+
       h1 {
         text-align: center;
       }
-  
+
       .booksList {
         border: 2px solid rgb(61, 60, 60);
         width: 100%;
         margin-bottom: 1.5rem;
       }
-  
+
       .booksList > div:nth-child(2n+1) {
         background-color: rgb(224, 219, 219);
       }
-  
+
       .booksList > div {
         display: flex;
         justify-content: space-between;
@@ -309,35 +310,35 @@ footer {
         margin: 0;
         max-width: 100%;
       }
-  
+
       .booksList > div > button {
         padding: 0.3rem 1rem 0.3rem 1rem;
         box-shadow: 3px 3px black;
       }
-  
+
       .booksList > div > p {
         padding: 0;
         margin: 0 0 0;
       }
     }
-  
-  /* ##### form styles ##### */
+
+    /* ##### form styles ##### */
     .form {
       display: none;
       width: 80%;
       margin: 1rem auto 0 auto;
       position: relative;
-  
+
       h2 {
         text-align: center;
       }
-  
+
       input {
         width: 100%;
         height: 1.3rem;
         border: 2px solid rgb(73, 71, 71);
       }
-  
+
       .submit {
         margin-left: 85%;
         width: 15%;
@@ -345,9 +346,9 @@ footer {
         box-shadow: 3px 3px black;
       }
     }
-  
+
     /* ##### contact styles goes here ##### */
-  
+
     .contact {
       display: none;
     }
