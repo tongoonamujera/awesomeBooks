@@ -15,10 +15,8 @@ export class Html {
     const booksList = document.querySelector('.booksList');
     const newBook = document.createElement('div');
     newBook.innerHTML += `
-    <p><strong>${book.title}</strong></p>
-    <p><strong>${book.author}</strong></p>
+    <p><strong>"${book.title}"  by  ${book.author}</strong></p>
     <button class="deleteBook" type="button" data-id=${index} data-title=${book.title} data-author=${book.author}> Remove </button>
-    <hr>
     `;
     newBook.querySelector('button').addEventListener('click', (e) => LocalStorage.deleteBook(e));
     booksList.appendChild(newBook);
