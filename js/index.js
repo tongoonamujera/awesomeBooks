@@ -7,3 +7,8 @@ newBookForm.addEventListener('submit', (e) => {
 });
 
 Html.displayBooks();
+
+const currentDateElement = document.querySelector(".current-date"); 
+var date = luxon.DateTime.now().toFormat('LLL dd yyyy, t')
+console.log(date)
+currentDateElement.innerHTML += `<p> ${date} </p>`

@@ -58,6 +58,10 @@ body {
   color: #0404af;
 }
 
+.header .navbar .nav-end label:last-child {
+  border-right: none;
+}
+
 .header .navbar .nav-end .books {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -83,13 +87,25 @@ body {
 .main {
   margin-top: 1.1rem;
   max-width: 100vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   padding: 0;
+  min-height: 90vh;
   /* ##### Book list style found here ##### */
   /* ##### form styles ##### */
   /* ##### contact styles goes here ##### */
+}
+
+.main .current-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 1.5em;
 }
 
 .main input[type="radio"] {
@@ -105,7 +121,9 @@ body {
 }
 
 .main #contact:checked ~ .contact {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main hr {
@@ -120,9 +138,7 @@ body {
   display: none;
   width: 80%;
   margin: 0 auto 0 auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
 }
 
 .main .books h1 {
@@ -192,6 +208,22 @@ body {
 
 .main .contact {
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ##### footer Styles #### */
+footer {
+  border: 2px solid black;
+  padding: 1em;
 }
 
 @media only screen and (max-width: 560px) {
@@ -265,9 +297,7 @@ body {
   .main {
     margin-top: 1.1rem;
     max-width: 100vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100%;
     padding: 0;
     /* ##### Book list style found here ##### */
     /* ##### form styles ##### */
@@ -296,9 +326,7 @@ body {
     display: none;
     width: 90%;
     margin: 0 auto 0 auto;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100%;
   }
   .main .books h1 {
     text-align: center;

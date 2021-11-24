@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/luxon.js"></script>
 </head>
 <body>
 <header class="header">
@@ -23,6 +24,7 @@
 
 <!-- main  -->
   <main class="main">
+    <div class="current-date"></div>
     <input type="radio" name="navigation" id="books" checked />
     <input type="radio" name="navigation" id="forms">
     <input type="radio" name="navigation" id="contact">
@@ -47,11 +49,30 @@
       </form>
     </div>
 
-    <div class="contact">Here are contact</div>
+    <div class="contact">
+      <h2>Contact information</h2>
+      <p>Do you have any questions 
+        or you just want to say "Hello"?<br>
+        You can reach out to us!
+      </p>
+      <ul>
+        <li>
+          Our e-mail: mail@mail.com
+        </li>
+        <li>
+          Our phone number: 0043586534422
+        </li>
+        <li>
+          Our address: Streetname 22, 84503 City, Country
+        </li>
+      </ul>
+    </div>
   </main>
 
   <!-- footer -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    Copyright ...
+  </footer>
   <script src="js/index.js" type="module"></script>
 </body>
 </html>
