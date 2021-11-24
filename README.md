@@ -26,6 +26,7 @@ To get a local copy up and running, follow these simple example steps.
 2. Make your new cloned directory your active directory
 3. Currently, you are in the "development branch."
 4. Change your current branch to Feature branch `git checkout feature` to navigate to a branch of your choice
+5. Open a server on your local machine and start using the app.
 
 ### USAGE
 
