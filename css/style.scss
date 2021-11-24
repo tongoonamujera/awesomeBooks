@@ -186,6 +186,7 @@ body {
 footer {
   border: 2px solid black;
   padding: 1em;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 560px) {
@@ -351,5 +352,11 @@ footer {
     .contact {
       display: none;
     }
+  }
+
+  footer {
+    border: 2px solid black;
+    padding: 1em;
+    font-weight: 900;
   }
 }
