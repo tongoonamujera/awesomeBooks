@@ -10,6 +10,8 @@ body {
   margin: 0;
 }
 
+/* stylelint-disable */
+
 .header .navbar {
   max-width: 99%;
   height: inherit;
