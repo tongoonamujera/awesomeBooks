@@ -6,11 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Books</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/luxon.js"></script>
 </head>
 <body>
+<header class="header">
+  <nav class="navbar">
+    <div class="nav-start">
+      <h4>Awesome Books</h4>
+    </div>
+    <div class="nav-end">
+      <label for="books">List</label>
+      <label for="forms">Add New</label>
+      <label for="contact">Contact</label>
+    </div>
+  </nav>
+</header>
 
 <!-- main  -->
   <main class="main">
+    <div class="current-date"></div>
+    <input type="radio" name="navigation" id="books" checked />
+    <input type="radio" name="navigation" id="forms">
+    <input type="radio" name="navigation" id="contact">
     <div class="books">
       <h1>All awesome books</h1>
       <div class="booksList">
@@ -20,7 +37,7 @@
     <hr>
 
     <div class="form">
-      <h2>Add new book</h2>
+      <h2>Add a new book</h2>
       <form id="newBookForm">
         <div>
           <input type="text" name="title" placeholder="Title">
@@ -31,10 +48,31 @@
         <button class='submit'>Add</button>
       </form>
     </div>
+
+    <div class="contact">
+      <h2>Contact information</h2>
+      <p>Do you have any questions 
+        or you just want to say "Hello"?<br>
+        You can reach out to us!
+      </p>
+      <ul>
+        <li>
+          Our e-mail: mail@mail.com
+        </li>
+        <li>
+          Our phone number: 0043586534422
+        </li>
+        <li>
+          Our address: Streetname 22, 84503 City, Country
+        </li>
+      </ul>
+    </div>
   </main>
 
   <!-- footer -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    Copyright ...
+  </footer>
   <script src="js/index.js" type="module"></script>
 </body>
 </html>

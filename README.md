@@ -4,7 +4,7 @@
 
 ## Live Demo Link
 
-no live demo for now
+[You can View live Deployment here](https://tongoonamujera.github.io/awesomeBooks/)
 
 ## Built With
 
@@ -22,10 +22,11 @@ git clone https://github.com/tongoonamujera/awesomeBooks.git
 
 To get a local copy up and running, follow these simple example steps.
 
-1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/grouped-transactions.git`
+1. Open a terminal window and enter `git clone https://github.com/tongoonamujera/awesomeBooks.git`
 2. Make your new cloned directory your active directory
 3. Currently, you are in the "development branch."
 4. Change your current branch to Feature branch `git checkout feature` to navigate to a branch of your choice
+5. Open a server on your local machine and start using the app.
 
 ### USAGE
 
